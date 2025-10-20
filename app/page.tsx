@@ -137,8 +137,15 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            Passionate about interdisciplinary collaboration between software, data analytics, and 
+            environmental engineering to take on sustainability challenges.<br />
+            <br />
+            I pride myself on my unconventional and genre-breaking background and experiences.
+            Most recent of which was developing process digital twin technology in an Ecolab and Siemens collaboration in order
+            to conserve water and energy in industrial settings.<br />
+            <br />
+            Always looking to do more within climate tech. Would love to 
+            connect with others interested in this space!
           </p>
         </div>
       </motion.section>
@@ -152,7 +159,13 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                {project.video ? (
+                  <ProjectVideo src={project.video} />
+                ) : (
+                  <div className="aspect-video w-full rounded-xl bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center">
+                    <p className="text-zinc-500 dark:text-zinc-400">Click to learn more!</p>
+                  </div>
+                )}
               </div>
               <div className="px-1">
                 <a
@@ -210,7 +223,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -244,7 +257,7 @@ export default function Personal() {
             ))}
           </AnimatedBackground>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         variants={VARIANTS_SECTION}
@@ -252,10 +265,11 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
+          Please reach out at{' '}
+          <a className="underline dark:text-zinc-300" href={`mailto:${'mgopal@umich.edu'}`}>
             {EMAIL}
           </a>
+          !
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (

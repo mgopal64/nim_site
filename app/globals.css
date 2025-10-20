@@ -2,15 +2,43 @@
 @plugin '@tailwindcss/typography';
 @custom-variant dark (&:is(.dark *));
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
+/* 🌿 Subtle Climate-Tech Theme (built on Nim base) */
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* keep Nim’s neutral tone but add a subtle tint */
+    @apply bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100;
+  }
+
+  a {
+    /* muted emerald accent instead of bright green */
+    @apply text-emerald-600 hover:text-emerald-500 transition-colors;
+  }
+
+  h1, h2, h3, h4, h5 {
+    /* strong readable headers */
+    @apply text-neutral-900 dark:text-neutral-100 font-semibold tracking-tight;
+  }
+
+  p {
+    /* keep original soft Nim tone */
+    @apply text-neutral-600 dark:text-neutral-400 leading-relaxed;
+  }
+
+  section {
+    /* subtle elevation with eco-tint shadows */
+    @apply bg-white/80 dark:bg-neutral-900/70 backdrop-blur-md rounded-xl shadow-sm border border-emerald-50/40 dark:border-emerald-900/30 p-6 transition-all;
+  }
+
+  button {
+    /* calm but alive emerald button */
+    @apply bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-all;
+  }
+
+  /* Tailwind v4 border compatibility */
   *,
   ::after,
   ::before,
@@ -20,13 +48,27 @@
   }
 }
 
+/* 🌎 Syntax Highlighting (subtle blues/greens for eco feel) */
 :root {
-  --sh-class: #7aa2f7;
-  --sh-sign: #89ddff;
-  --sh-string: #9ece6a;
-  --sh-keyword: #bb9af7;
-  --sh-comment: #565f89;
-  --sh-jsxliterals: #7aa2f7;
-  --sh-property: #73daca;
-  --sh-entity: #e0af68;
+  --sh-class: #4ea8de;
+  --sh-sign: #10b981;
+  --sh-string: #7fd1ae;
+  --sh-keyword: #3b82f6;
+  --sh-comment: #6b7280;
+  --sh-jsxliterals: #10b981;
+  --sh-property: #22c55e;
+  --sh-entity: #2563eb;
+}
+
+/* 🌒 Balanced dark mode */
+.dark {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+.dark section {
+  @apply bg-neutral-900/70 border-neutral-800;
+}
+
+.dark a {
+  @apply text-emerald-400 hover:text-emerald-300;
 }

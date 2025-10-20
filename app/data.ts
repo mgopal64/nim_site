@@ -29,97 +29,81 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'BLUElab Smart Irrigation',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+      'Controller and Flask dashboard for deployable smart irrigation system using specific crop data, agricultural equations, smart weather station, and more.',
+    link: 'https://github.com/mgopal64/WaterRec',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      '',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'MHACKS 2025: Soil Moisture Prediction',
+    description: 'Random Forest model trained on NASA SMAP satellite data and STF-SSM spatiotemporal dataset in order to predict soil moisture.',
+    link: 'https://github.com/mgopal64/SoilMoisturePrediction',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    '',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'Ecolab',
+    title: 'Engineering Intern',
+    start: 'May 2025',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://www.ecolab.com/offerings/climate-intelligence',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'One Energy/One Power',
+    title: 'Field Engineer',
+    start: 'May 2024',
+    end: 'August 2024',
+    link: 'https://onepower.com/',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'Digital Water Lab @ University of Michigan',
+    title: 'Research Assistant in ML Applications',
+    start: 'December 2023',
+    end: 'May 2024',
+    link: 'https://www.digitalwaterlab.org/',
     id: 'work3',
+  },
+  {
+    company: 'Farm Bureau Insurance of Michigan',
+    title: 'Application Development and IT Intern',
+    start: 'July 2022',
+    end: 'May 2024',
+    link: 'https://www.michfb.com/',
+    id: 'work4',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
-  },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
-  },
+  // {
+  //   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
+  //   description: 'How AI is changing the way we design',
+  //   link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+  //   uid: 'blog-1',
+  // },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/mgopal64',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/manushgopal/',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/manhouse64',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'mgopal@umich.edu'
